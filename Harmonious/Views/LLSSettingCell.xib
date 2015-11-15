@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="LLSSettingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-UA-dhI">
+                        <rect key="frame" x="300" y="18" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="fd3-Eq-5U1"/>
+                            <constraint firstAttribute="width" constant="10" id="g9J-hr-XHs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sp-Af-1d2">
+                        <rect key="frame" x="10" y="15" width="280" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zHk-UA-dhI" secondAttribute="bottom" constant="16.5" id="2GR-g9-f5D"/>
+                    <constraint firstItem="zHk-UA-dhI" firstAttribute="leading" secondItem="7sp-Af-1d2" secondAttribute="trailing" constant="10" id="7yX-Kc-h6l"/>
+                    <constraint firstAttribute="trailing" secondItem="zHk-UA-dhI" secondAttribute="trailing" constant="10" id="ORZ-9w-B3h"/>
+                    <constraint firstItem="zHk-UA-dhI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Uwp-eH-pzr"/>
+                    <constraint firstAttribute="bottom" secondItem="7sp-Af-1d2" secondAttribute="bottom" constant="14.5" id="W8P-ve-5qi"/>
+                    <constraint firstItem="7sp-Af-1d2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eQw-qf-knc"/>
+                    <constraint firstItem="7sp-Af-1d2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="myh-W2-hsK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="indicatorView" destination="zHk-UA-dhI" id="7Bp-tl-Djj"/>
+                <outlet property="titleLabel" destination="7sp-Af-1d2" id="MZ4-od-glr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="indicator" width="14" height="22"/>
+    </resources>
+</document>
